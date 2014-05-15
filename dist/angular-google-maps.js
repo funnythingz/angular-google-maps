@@ -1,4 +1,4 @@
-/*! angular-google-maps 1.0.18 2014-04-03
+/*! angular-google-maps 1.0.18 2014-05-15
  *  AngularJS directives for Google Maps
  *  git: https://github.com/nlaplante/angular-google-maps.git
  */
@@ -3112,11 +3112,11 @@ Nicholas McCready - https://twitter.com/nmccready
             }), true);
             return scope.$on("$destroy", function() {
               polyline.setMap(null);
-              pathSetAtListener();
+              google.maps.event.removeListener(pathSetAtListener);
               pathSetAtListener = null;
-              pathInsertAtListener();
+              google.maps.event.removeListener(pathInsertAtListener);
               pathInsertAtListener = null;
-              pathRemoveAtListener();
+              google.maps.event.removeListener(pathRemoveAtListener);
               return pathRemoveAtListener = null;
             });
           });

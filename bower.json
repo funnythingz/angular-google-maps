@@ -3,11 +3,11 @@
   "version": "1.0.18",
   "main": "./dist/angular-google-maps.js",
   "dependencies": {
-    "angular": "https://github.com/angular/bower-angular.git#1.2.x",
-    "underscore": "https://github.com/jashkenas/underscore.git#~1.5.x"
+    "angular": "https://github.com/angular/bower-angular.git#",
+    "underscore": "https://github.com/jashkenas/underscore.git#"
   },
   "devDependencies": {
-    "angular-mocks": "https://github.com/angular/bower-angular-mocks.git#1.2.x",
-    "jquery": "https://github.com/jquery/jquery.git#2.1.x"
+    "angular-mocks": "https://github.com/angular/bower-angular-mocks.git#",
+    "jquery": "https://github.com/jquery/jquery.git#"
   }
 }
